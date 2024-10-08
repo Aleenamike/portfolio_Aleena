@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title> PORTFOLIO&mdash;</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/custom-bs.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/line-icons/style.css">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+
+
+    <!-- NAVBAR -->
+    <header class="site-navbar mt-3" id="top">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="site-logo col-6"><a href="index.html">PORTFOLIO</a></div>
+
+
+
+
+          <nav class="mx-auto site-navigation">
+            <ul class="site-menu js-clone-nav d-none d-lg-block">
+              <li><a  class="nav-link active" href="#home-section">Home</a></li>
+              <li><a href="#about-us-section">About</a></li>
+              <li><a href="#Certificates-section">Certificates</a></li>
+              <li><a href="#Projects">Projects</a></li>
+
+              <!-- <li class="has-children">
+                <a href="services.html">Pages</a> -->
+                <!-- <ul class="dropdown">
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="service-single.html">Service Single</a></li>
+                  <li><a href="blog-single.html">Blog Single</a></li>
+                  <li><a href="portfolio-single.html">Portfolio Single</a></li>
+                  <li><a href="testimonials.html">Testimonials</a></li>
+                  <li><a href="faq.html">Frequently Ask Questions</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>-->
+                </ul> 
+              <!-- </li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul> -->
+          </nav>
+
+          <div class="col-6 site-burger-menu d-block d-lg-none text-right">
+            <a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- HOME -->
+    <section class="home-section section-hero overlay slanted" >
+
+      <div class="container" id="home-section">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-8 text-center">
+            <h1>I'M ALEENA MICHAEL</h1>
+            <div class="mx-auto w-75">
+              <p>MCA Student at Marian College Kuttikkanam.</p>
+            </div>
+            <!-- <p class="mt-5"><a href="contact.html" class="btn btn-outline-white btn-md ">Get in touch</a></p> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="video-container">
+        <div class="img-1"><img src="images/ale.jpg"></div>
+      </div>
+
+      <!-- <a href="#about-us-section" class="scroll-button smoothscroll">
+        <span class=" icon-keyboard_arrow_down"></span>
+      </a> -->
+
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="site-section about-us-section" id="about-us-section">
+      <div class="container">
+        <div class="row mb-5 pt-0 site-section">
+          <div class="col-md-6 align-self-center">
+            <h2 class="section-title mb-4">About Us</h2>
+
+            <p>Hello! I'm Aleena Michael, an MCA student at Marian College Kuttikkanam (Autonomous). My academic journey
+              has led me to explore and develop a passion for Artificial Intelligence, Web Development, and Software
+              Development. I thrive on the challenges and opportunities these fields present, and I am constantly
+              seeking to expand my knowledge and skills. My goal is to contribute to innovative projects that harness
+              the power of technology to make a positive impact. Welcome to my portfolio!</p>
+            <p class="mt-4">
+              <a href="#" class="special_link" id="downloadButton">Download CV</a>
+            </p>
+
+            <script>
+              document.getElementById('downloadButton').addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent the default action
+                var pdfUrl = '../CV/Aleena cv.pdf'; // Path to your PDF file
+                var link = document.createElement('a');
+                link.href = pdfUrl;
+                link.download = 'Aleena cv.pdf'; // Default filename for the downloaded file
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              });
+            </script>
+
+          </div>
+          <div class="col-md-5 ml-auto img-overlap">
+            <div class="img-1"><img src="images/ale.jpg" alt="Image" class="img-fluid img-shadow"></div>
+            <div class="img-2"><img src="images/ale.jpg" alt="Image" class="img-fluid img-shadow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES -->
+    <!-- <section class="site-section services-section bg-light block__62849" id="services-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h3 class="section-title-sub text-primary">Our Services</h3>
+            <h2 class="section-title mb-3">Services</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+
+            <a href="service-single.html" class="block__16443 text-center d-block">
+              <span class="custom-icon mx-auto"><span class="icon-line-tools d-block"></span></span>
+              <h3>Graphic Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+            </a>
+
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+            
+            <a href="service-single.html" class="block__16443 text-center d-block">
+              <span class="custom-icon mx-auto"><span class="icon-line-lightbulb d-block"></span></span>
+              <h3>Marketing Strategy</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+            </a>            
+
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+            
+            <a href="service-single.html" class="block__16443 text-center d-block">
+              <span class="custom-icon mx-auto"><span class="icon-line-laptop d-block"></span></span>
+              <h3>Web Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+            </a>            
+
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+            
+            <a href="service-single.html" class="block__16443 text-center d-block">
+              <span class="custom-icon mx-auto"><span class="icon-line-search d-block"></span></span>
+              <h3>SEO</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+            </a>
+
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+            
+            <a href="service-single.html" class="block__16443 text-center d-block">
+              <span class="custom-icon mx-auto"><span class="icon-line-presentation d-block"></span></span>
+              <h3>Market Leading </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+            </a>
+
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+            
+            <a href="service-single.html" class="block__16443 text-center d-block">
+              <span class="custom-icon mx-auto"><span class="icon-line-ribbon d-block"></span></span>
+              <h3>Pixel Perfect Design</h3>
+              <p class="d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <a href="#" class="btn btn-primary btn-md">View All Services</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- PORTFOLIO -->
+
+    <section class="site-section block__62272" style="margin-top: -265px;" id="Certificates-section">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-12 text-center" data-aos="fade">
+            <h3 class="section-title-sub text-primary"></h3>
+            <h2 class="section-title mb-3">Certificates</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-5" data-aos="fade-up">
+          <div id="filters" class="filters text-center button-group col-md-7">
+            <!-- <button class="btn btn-primary active" data-filter="*">All</button>
+            <button class="btn btn-primary" data-filter=".web">Web</button>
+            <button class="btn btn-primary" data-filter=".design">Design</button>
+            <button class="btn btn-primary" data-filter=".brand">Brand</button> -->
+          </div>
+        </div>
+
+        <div id="posts" class="row no-gutter">
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <div class="item-wrap">
+              <span class="icon-add"></span>
+              <img class="img-fluid" src="images/img3.jpg">
+            </div>
+          </div>
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <div class="item-wrap">
+              <span class="icon-add"></span>
+              <img class="img-fluid" src="images/img4.jpg">
+            </div>
+          </div>
+
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <div class="item-wrap">
+              <span class="icon-add"></span>
+              <img class="img-fluid" src="images/img5.jpg_page-0001.jpg">
+            </div>
+          </div>
+
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <div class="item-wrap">
+              <span class="icon-add"></span>
+              <img class="img-fluid" src="images/img6.jpg_page-0001.jpg">
+            </div>
+          </div>
+
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <div class="item-wrap">
+              <span class="icon-add"></span>
+              <img class="img-fluid" src="images/img7.jpg_page-0001.jpg">
+            </div>
+          </div>
+
+
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <div class="item-wrap">
+              <span class="icon-add"></span>
+              <img class="img-fluid" src="images/img8.jpg_page-0001.jpg">
+            </div>
+          </div>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <div class="item-wrap">
+              <span class="icon-add"></span>
+              <img class="img-fluid" src="images/img9_page-0001.jpg">
+            </div>
+          </div>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+
+          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <div class="item-wrap">
+              <span class="icon-add"></span>
+              <img class="img-fluid" src="images/img10_page-0001.jpg">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- <section class="site-section" id="next-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <a data-fancybox data-ratio="2" href="https://vimeo.com/317571768" class="block__96788">
+              <span class="play-icon"><span class="icon-play"></span></span>
+              <img src="images/sq_img_6.jpg" alt="Image" class="img-fluid img-shadow">
+            </a>
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <h3 class="section-title-sub text-primary">Watch the video</h3>
+            <h2 class="section-title mb-3">We Are Web Agency</h2>
+            <p class="lead">Eveniet voluptatibus voluptates suscipit minima, cum voluptatum ut dolor, sed facere
+              corporis qui, ea quisquam quis odit minus nulla vitae. Sit, voluptatem.</p>
+            <p>Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi
+              officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+
+    <section class="site-section block__45439" style="    margin-top: -174px;" id = "Projects">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h3 class="section-title-sub text-primary"></h3>
+            <h2 class="section-title mb-3">Projects</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-6 mb-4">
+            <div class="block__86547 d-block d-xl-flex align-items-stretch">
+              <figure class="img" style="background-image: url('images/img1.jpg')">
+              </figure>
+              <div class="h-100">
+                <h3 class="mb-4"><a href="https://github.com/Aleenamike/Travel.git">Travel Management</a></h3>
+                <!-- <div class="block__27192 d-flex pt-1 border-top">
+                  <a href="#"><span class="icon-person"></span> Jacob Smith</a>
+                  <a href="#"><span class="icon-calendar-o"></span> 7 Apr 2019</a>
+                  <a href="#"><span class="icon-chat"></span> 2</a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 mb-4">
+            <div class="block__86547 d-block d-xl-flex align-items-stretch">
+              <figure class="img" style="background-image: url('images/img2.jpg')">
+              </figure>
+              <div class="h-100">
+                <h3 class="mb-4"><a href="https://github.com/Aleenamike/Online_hotel_booking.git">Online Hotel Booking
+                    System</a></h3>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer slanted-footer">
+
+      <a href="#top" class="smoothscroll scroll-top">
+        <span class="icon-keyboard_arrow_up"></span>
+      </a>
+
+      <div class="container">
+        <div class="row mb-5">
+
+
+
+          <!-- <div class="col-6 col-md-3 mb-4 mb-md-0">
+            <h3>Contact Us</h3>
+            <div class="footer-social">
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+              <a href="#"><span class="icon-linkedin"></span></a>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="row text-center">
+
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/stickyfill.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
